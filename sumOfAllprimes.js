@@ -13,12 +13,14 @@ function isPrime(val){
   return true;
 }
 
+
 function sumPrimes(num) {
   var answer = 0;
 
   //loop through all numbers from 2 to input value
   for(var i=2; i <= num; i++){
 
+    // use the isPrime function to check to see if each number is prime
     //sum only prime numbers, skip all others
     if(isPrime(i)){
       answer += i;
